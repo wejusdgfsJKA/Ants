@@ -60,6 +60,14 @@ namespace EventBTree
                 UpdateLeftmost();
             }
         }
+        public override void Restart()
+        {
+            base.Restart();
+            for (int i = 0; i < children.Count; i++)
+            {
+                children[i].Restart();
+            }
+        }
         /// <summary>
         /// Return state of this node, services and decorators, as well as its children.
         /// </summary>

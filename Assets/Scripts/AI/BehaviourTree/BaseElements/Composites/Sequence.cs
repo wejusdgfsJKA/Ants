@@ -46,7 +46,7 @@ namespace EventBTree
         /// </summary>
         public override void UpdateLeftmost()
         {
-            if (state == NodeState.RUNNING)
+            if (children[leftmost].BlockingDecorators > 0 && state == NodeState.RUNNING)
             {
                 Abort();
             }

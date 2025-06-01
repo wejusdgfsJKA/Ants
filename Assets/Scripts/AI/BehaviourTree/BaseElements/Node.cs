@@ -168,6 +168,13 @@ namespace EventBTree
             }
         }
         /// <summary>
+        /// Restart this node.
+        /// </summary>
+        public virtual void Restart()
+        {
+            State = NodeState.FAILURE;
+        }
+        /// <summary>
         /// Return state of this node, services and decorators.
         /// </summary>
         /// <param name="debug">StringBuilder object.</param>

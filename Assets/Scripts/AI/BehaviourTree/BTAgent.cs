@@ -14,7 +14,6 @@ namespace EventBTree
             {
                 if (NavAgent.pathPending)
                 {
-                    print("Path status:" + NavAgent.pathPending);
                     return false;
                 }
                 if (NavAgent.velocity.magnitude > 0.1)
@@ -36,12 +35,12 @@ namespace EventBTree
         {
             NavAgent.isStopped = false;
             NavAgent.updateRotation = rotate;
+            NavAgent.stoppingDistance = stoppingDistance;
             NavAgent.SetDestination(point);
             return NavAgent.pathStatus == NavMeshPathStatus.PathComplete;
         }
         public virtual bool Wander(int nrOfTries = 10, float radius = 10)
         {
-            Debug.Log("Wandering");
             while (nrOfTries != 0)
             {
                 nrOfTries--;
