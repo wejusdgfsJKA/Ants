@@ -404,6 +404,636 @@ Transform:
   - {fileID: 3554082216015602395}
   m_Father: {fileID: 5881762577179457726}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 45}
+--- !u!1 &2462123538419135569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6966073488831787984}
+  - component: {fileID: 8775280034343535520}
+  - component: {fileID: 3788711404571447504}
+  - component: {fileID: 347628821705900916}
+  - component: {fileID: 6159731821472381356}
+  - component: {fileID: 1096375342144859037}
+  - component: {fileID: 8879318520493497971}
+  - component: {fileID: 345180130164745234}
+  - component: {fileID: 7738943098306395335}
+  - component: {fileID: 5741062043275686291}
+  - component: {fileID: 6033852793051551136}
+  - component: {fileID: 6741780632161225534}
+  - component: {fileID: 5761981865428321568}
+  - component: {fileID: 5362774280163519893}
+  - component: {fileID: 5252303245523285912}
+  - component: {fileID: 7933230981509517843}
+  - component: {fileID: 5259488489492081692}
+  - component: {fileID: 1119124030946021372}
+  - component: {fileID: 2069044369216702940}
+  - component: {fileID: 8681172032022404083}
+  - component: {fileID: 7688760293669090830}
+  - component: {fileID: 3994984059845025151}
+  m_Layer: 7
+  m_Name: BehaviourTree
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6966073488831787984
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462123538419135569}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5425530719749385596}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8775280034343535520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462123538419135569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b2217e4d35c0c94ea02cf2166c17e4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  variables:
+  - {fileID: 1096375342144859037}
+  - {fileID: 8879318520493497971}
+  - {fileID: 6033852793051551136}
+  - {fileID: 5362774280163519893}
+  - {fileID: 7933230981509517843}
+  masterBlackboard: {fileID: 0}
+--- !u!114 &3788711404571447504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462123538419135569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b25af8627659c6949b60949c3aa8d91d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedEditorNode: {fileID: 8681172032022404083}
+  repeatOnFinish: 0
+  maxExecutionsPerTick: 1000
+  parent: {fileID: 0}
+--- !u!114 &347628821705900916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462123538419135569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e5f392bbea2fa2499665ed8b604ff86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monoBehaviourTree: {fileID: 3788711404571447504}
+--- !u!114 &6159731821472381356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462123538419135569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 538645f2f9090fd43bc6154b2e89e2d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Root
+  rect:
+    serializedVersion: 2
+    x: 620
+    y: 200
+    width: 160
+    height: 44
+  parent: {fileID: 0}
+  children:
+  - {fileID: 8681172032022404083}
+  behaviourTree: {fileID: 0}
+  runtimePriority: 0
+  breakpoint: 0
+--- !u!114 &1096375342144859037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462123538419135569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbc98ff6538275b4c9a8383882546ee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: CarryPoint
+  val: {fileID: 1694640588964648705}
+--- !u!114 &8879318520493497971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462123538419135569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbc98ff6538275b4c9a8383882546ee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: ClosestFood
+  val: {fileID: 0}
+--- !u!114 &345180130164745234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462123538419135569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08540605df275034fafc8e05c6704214, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Selector
+  rect:
+    serializedVersion: 2
+    x: 620
+    y: 400
+    width: 160
+    height: 44
+  parent: {fileID: 8681172032022404083}
+  children:
+  - {fileID: 5252303245523285912}
+  - {fileID: 7738943098306395335}
+  - {fileID: 2069044369216702940}
+  behaviourTree: {fileID: 0}
+  runtimePriority: 0
+  breakpoint: 0
+  random: 0
+--- !u!114 &7738943098306395335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462123538419135569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59a329843d6125a4ea57107e5ed8d5c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: FoodSearchService
+  rect:
+    serializedVersion: 2
+    x: 720
+    y: 480
+    width: 160
+    height: 44
+  parent: {fileID: 345180130164745234}
+  children:
+  - {fileID: 3994984059845025151}
+  behaviourTree: {fileID: 0}
+  runtimePriority: 0
+  breakpoint: 0
+  interval: 1
+  randomDeviation: 0
+  callOnEnter: 1
+  closestFood:
+    useConstant: 0
+    mode: 0
+    blackboard: {fileID: 8775280034343535520}
+    key: ClosestFood
+    constantValue: {fileID: 0}
+  currentLoad:
+    useConstant: 0
+    mode: 0
+    blackboard: {fileID: 8775280034343535520}
+    key: CurrentLoad
+    constantValue: {fileID: 0}
+  foodMask:
+    serializedVersion: 2
+    m_Bits: 64
+  sphereCheckRadius: 25
+--- !u!114 &5741062043275686291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462123538419135569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c78c7da6b00e1b46bad07949050f82f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Sequence
+  rect:
+    serializedVersion: 2
+    x: 760
+    y: 640
+    width: 160
+    height: 44
+  parent: {fileID: 3994984059845025151}
+  children:
+  - {fileID: 6741780632161225534}
+  - {fileID: 5259488489492081692}
+  behaviourTree: {fileID: 0}
+  runtimePriority: 0
+  breakpoint: 0
+  random: 0
+--- !u!114 &6033852793051551136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462123538419135569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbc98ff6538275b4c9a8383882546ee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: CurrentLoad
+  val: {fileID: 0}
+--- !u!114 &6741780632161225534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462123538419135569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ec611930975eda44b3c82fc2e9133a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Move Navmesh Agent
+  rect:
+    serializedVersion: 2
+    x: 680
+    y: 720
+    width: 160
+    height: 44
+  parent: {fileID: 5741062043275686291}
+  children: []
+  behaviourTree: {fileID: 0}
+  runtimePriority: 0
+  breakpoint: 0
+  destination:
+    useConstant: 0
+    mode: 0
+    blackboard: {fileID: 8775280034343535520}
+    key: ClosestFood
+    constantValue: {fileID: 0}
+  agent: {fileID: 2940059707374657902}
+  stopDistance: 1
+  updateInterval: 1
+--- !u!114 &5761981865428321568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462123538419135569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ec611930975eda44b3c82fc2e9133a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Move Navmesh Agent
+  rect:
+    serializedVersion: 2
+    x: 420
+    y: 640
+    width: 160
+    height: 44
+  parent: {fileID: 7688760293669090830}
+  children: []
+  behaviourTree: {fileID: 0}
+  runtimePriority: 0
+  breakpoint: 0
+  destination:
+    useConstant: 0
+    mode: 0
+    blackboard: {fileID: 8775280034343535520}
+    key: FoodStorage
+    constantValue: {fileID: 0}
+  agent: {fileID: 2940059707374657902}
+  stopDistance: 1
+  updateInterval: 1
+--- !u!114 &5362774280163519893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462123538419135569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbc98ff6538275b4c9a8383882546ee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: FoodStorage
+  val: {fileID: 0}
+--- !u!114 &5252303245523285912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462123538419135569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 534e3ec7de6cd444e984c2e7f68e42e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Is Set Condition
+  rect:
+    serializedVersion: 2
+    x: 520
+    y: 480
+    width: 160
+    height: 44
+  parent: {fileID: 345180130164745234}
+  children:
+  - {fileID: 7688760293669090830}
+  behaviourTree: {fileID: 0}
+  runtimePriority: 0
+  breakpoint: 0
+  abort: 0
+  invert: 0
+  type: 2
+  boolReference:
+    useConstant: 0
+    mode: 1
+    blackboard: {fileID: 0}
+    key: 
+    constantValue: 0
+  objectReference:
+    useConstant: 0
+    mode: 1
+    blackboard: {fileID: 0}
+    key: 
+    constantValue: {fileID: 0}
+  transformReference:
+    useConstant: 0
+    mode: 1
+    blackboard: {fileID: 8775280034343535520}
+    key: CurrentLoad
+    constantValue: {fileID: 0}
+--- !u!114 &7933230981509517843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462123538419135569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbc98ff6538275b4c9a8383882546ee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: Self
+  val: {fileID: 5425530719749385596}
+--- !u!114 &5259488489492081692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462123538419135569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aebb7b961105f3745bedafbc3a7e40de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: GrabFoodTask
+  rect:
+    serializedVersion: 2
+    x: 845.60004
+    y: 751.2
+    width: 160
+    height: 44
+  parent: {fileID: 5741062043275686291}
+  children: []
+  behaviourTree: {fileID: 0}
+  runtimePriority: 0
+  breakpoint: 0
+  grabRange: 2
+  closestFood:
+    useConstant: 0
+    mode: 0
+    blackboard: {fileID: 8775280034343535520}
+    key: ClosestFood
+    constantValue: {fileID: 0}
+  self:
+    useConstant: 0
+    mode: 0
+    blackboard: {fileID: 8775280034343535520}
+    key: Self
+    constantValue: {fileID: 0}
+  carryPoint:
+    useConstant: 0
+    mode: 0
+    blackboard: {fileID: 8775280034343535520}
+    key: CarryPoint
+    constantValue: {fileID: 0}
+  currentLoad:
+    useConstant: 0
+    mode: 0
+    blackboard: {fileID: 8775280034343535520}
+    key: CurrentLoad
+    constantValue: {fileID: 0}
+--- !u!114 &1119124030946021372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462123538419135569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61e9b02b2b1320644a0fa529750835d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: DropFoodTask
+  rect:
+    serializedVersion: 2
+    x: 600
+    y: 640
+    width: 160
+    height: 44
+  parent: {fileID: 7688760293669090830}
+  children: []
+  behaviourTree: {fileID: 0}
+  runtimePriority: 0
+  breakpoint: 0
+  dropRange: 2
+  foodStorage:
+    useConstant: 0
+    mode: 0
+    blackboard: {fileID: 8775280034343535520}
+    key: FoodStorage
+    constantValue: {fileID: 0}
+  self:
+    useConstant: 0
+    mode: 0
+    blackboard: {fileID: 8775280034343535520}
+    key: Self
+    constantValue: {fileID: 0}
+  carryPoint:
+    useConstant: 0
+    mode: 0
+    blackboard: {fileID: 8775280034343535520}
+    key: CarryPoint
+    constantValue: {fileID: 0}
+  currentLoad:
+    useConstant: 0
+    mode: 0
+    blackboard: {fileID: 8775280034343535520}
+    key: CurrentLoad
+    constantValue: {fileID: 0}
+--- !u!114 &2069044369216702940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462123538419135569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8de708676dab85945bcbc97d51c292d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: WanderTask
+  rect:
+    serializedVersion: 2
+    x: 920
+    y: 480
+    width: 160
+    height: 44
+  parent: {fileID: 345180130164745234}
+  children: []
+  behaviourTree: {fileID: 0}
+  runtimePriority: 0
+  breakpoint: 0
+  agent: {fileID: 5210379354888827474}
+--- !u!114 &8681172032022404083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462123538419135569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 056841afaed742d4e909e76361b5173f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Repeater
+  rect:
+    serializedVersion: 2
+    x: 620
+    y: 300
+    width: 160
+    height: 44
+  parent: {fileID: 6159731821472381356}
+  children:
+  - {fileID: 345180130164745234}
+  behaviourTree: {fileID: 0}
+  runtimePriority: 0
+  breakpoint: 0
+  loops: 1
+  infinite: 1
+  breakOnFailure: 0
+--- !u!114 &7688760293669090830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462123538419135569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c78c7da6b00e1b46bad07949050f82f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Sequence
+  rect:
+    serializedVersion: 2
+    x: 520
+    y: 560
+    width: 160
+    height: 44
+  parent: {fileID: 5252303245523285912}
+  children:
+  - {fileID: 5761981865428321568}
+  - {fileID: 1119124030946021372}
+  behaviourTree: {fileID: 0}
+  runtimePriority: 0
+  breakpoint: 0
+  random: 0
+--- !u!114 &3994984059845025151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462123538419135569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 534e3ec7de6cd444e984c2e7f68e42e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Is Set Condition
+  rect:
+    serializedVersion: 2
+    x: 760
+    y: 560
+    width: 160
+    height: 44
+  parent: {fileID: 7738943098306395335}
+  children:
+  - {fileID: 5741062043275686291}
+  behaviourTree: {fileID: 0}
+  runtimePriority: 0
+  breakpoint: 0
+  abort: 0
+  invert: 0
+  type: 2
+  boolReference:
+    useConstant: 0
+    mode: 1
+    blackboard: {fileID: 0}
+    key: 
+    constantValue: 0
+  objectReference:
+    useConstant: 0
+    mode: 1
+    blackboard: {fileID: 0}
+    key: 
+    constantValue: {fileID: 0}
+  transformReference:
+    useConstant: 0
+    mode: 1
+    blackboard: {fileID: 8775280034343535520}
+    key: ClosestFood
+    constantValue: {fileID: 0}
 --- !u!1 &2885841266722665652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1826,7 +2456,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5425530719749385596}
-  - component: {fileID: 7788034074442970353}
   - component: {fileID: 5210379354888827474}
   - component: {fileID: 2940059707374657902}
   m_Layer: 7
@@ -1850,30 +2479,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8660287483447214574}
+  - {fileID: 6966073488831787984}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7788034074442970353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8008784634335672377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9160a27fa3472d349b461e0422e3a71c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  updateinterval: 0.1
-  <ShouldRun>k__BackingField: 1
-  stoppingDistance: 1
-  meleeRange: 3
-  sphereCheckRadius: 50
-  foodMask:
-    serializedVersion: 2
-    m_Bits: 64
-  carryPoint: {fileID: 1694640588964648705}
-  <Type>k__BackingField: 0
 --- !u!114 &5210379354888827474
 MonoBehaviour:
   m_ObjectHideFlags: 0

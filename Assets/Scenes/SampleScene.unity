@@ -380,7 +380,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3696904416756510045, guid: a5371a5092df9d84f84b969ba5c5e9cf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.75
+      value: 9.35
       objectReference: {fileID: 0}
     - target: {fileID: 3696904416756510045, guid: a5371a5092df9d84f84b969ba5c5e9cf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -488,7 +488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4686790d66411e448aaabe351d7bd6f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7788034074442970353, guid: 2b10c74d864171145933f86fff27f18c, type: 3}
+  prefab: {fileID: 8008784634335672377, guid: 2b10c74d864171145933f86fff27f18c, type: 3}
   nrOfAnts: 1
 --- !u!4 &1246130203
 Transform:
@@ -653,7 +653,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3696904416756510045, guid: a5371a5092df9d84f84b969ba5c5e9cf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32
+      value: 5.7
       objectReference: {fileID: 0}
     - target: {fileID: 3696904416756510045, guid: a5371a5092df9d84f84b969ba5c5e9cf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -661,7 +661,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3696904416756510045, guid: a5371a5092df9d84f84b969ba5c5e9cf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.400002
+      value: -10.3
       objectReference: {fileID: 0}
     - target: {fileID: 3696904416756510045, guid: a5371a5092df9d84f84b969ba5c5e9cf, type: 3}
       propertyPath: m_LocalRotation.w

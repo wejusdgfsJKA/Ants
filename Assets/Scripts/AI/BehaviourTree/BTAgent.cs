@@ -41,6 +41,7 @@ namespace EventBTree
         }
         public virtual bool Wander(int nrOfTries = 10, float radius = 10)
         {
+            Debug.Log("Wandering");
             while (nrOfTries != 0)
             {
                 nrOfTries--;

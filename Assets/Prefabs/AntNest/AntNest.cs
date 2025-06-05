@@ -1,16 +1,17 @@
+using MBT;
 using UnityEngine;
 
 public class AntNest : MonoBehaviour
 {
-    [SerializeField] AntBTree prefab;
+    [SerializeField] GameObject prefab;
     [SerializeField] int nrOfAnts;
     private void OnEnable()
     {
         for (int i = 0; i < nrOfAnts; i++)
         {
-            AntBTree ant = Instantiate(prefab, transform.position, Quaternion.identity);
-            ant.SetData(AntBTree.Strings.NestLocation, transform.position);
-            ant.SetData(AntBTree.Strings.FoodStorage, transform.position);
+            var ant = Instantiate(prefab, transform.position, Quaternion.identity);
+            ant.transform.GetChild(1).GetComponent<Blackboard>().
+                GetVariable<TransformVariable>("FoodStorage").Value = transform;
         }
     }
 }
